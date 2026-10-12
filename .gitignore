@@ -1,0 +1,10 @@
+# Ignorer les vidéos lourdes (limite GitHub 100 Mo)
+*.mp4
+*.avi
+*.mov
+
+# Fichiers système
+Thumbs.db
+.DS_Store
+Desktop.ini
+

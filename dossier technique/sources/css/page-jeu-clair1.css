@@ -1,0 +1,93 @@
+
+body {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("../php/img/Decor/clair/fond_jeu.jpg");
+	background-size: 100vw 100vh ;
+	background-repeat: repeat-x;
+	animation: nuage 20s linear infinite;
+  }
+  
+  @keyframes nuage {
+	0% { background-position: 0 0; }
+	100% { background-position: -3000px 0; }
+  }
+
+#meteorites{
+	background-image:url("../php/img/Decor/clair/meteorite.png");
+	background:contain;
+}
+
+
+/*Style du personnage et du véhicule équipé affiché par une fonction php*/
+#personnage_Equipe img, #vehicule_Equipe img {
+	position:absolute;
+	width: 10vw;
+	height: 10vw;
+	object-fit: contain;
+  }
+  #personnage_Equipe img {
+	z-index: 2;
+  }
+  #vehicule_Equipe img {
+	z-index: 1;
+  }
+
+#terre{
+	animation: spin 10s linear infinite;
+	background-image: url("../php/img/Decor/clair/terre1.png");
+	background-size:contain;
+}
+@keyframes spin{
+  100% { transform: rotate(-360deg);}
+}
+
+#bouton_parametre{
+	background-image:url("../php/img/Decor/clair/parametre.png");
+	background-size:contain;
+}
+
+#start{
+	border:solid 5px gold;
+	color:blue;
+}
+
+
+/*Partie chacher par défaut*/
+
+/*Menu paramètre*/
+#parametre{
+	background-color: beige;
+	border:5px solid black;
+}
+#parametre *:hover{
+	background-color: rgb(214, 214, 176);
+	border-radius:20%;
+	cursor:pointer;
+}
+
+/*Favoris*/
+#liste_perso,#liste_vehicule{
+	position:relative;
+	opacity: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height:15vh;	
+
+}
+/*Images favorites affichée par une focntion php*/
+#liste_perso img,#liste_vehicule img{
+	width: 7vw;
+	height: 7vw;
+	object-fit: contain;
+}
+/*Commandes pour apprendre à jouer*/
+#commandes{
+	background-color:white;
+	border: solid 5px;
+}

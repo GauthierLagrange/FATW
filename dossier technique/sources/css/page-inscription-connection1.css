@@ -1,0 +1,45 @@
+body {
+    height:100%;
+    width:100%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    overflow: hidden;
+    }
+h2{
+    text-align: center;
+    width: 850px;
+    font-family: 'Fuzzy Bubbles', cursive;	
+    }
+form{
+    background-color: #EDEDE9;
+    border: solid 4px grey;
+    font-weight:bold;
+    font-size: 25px;
+    width: 360px;	
+    }
+
+/*SHOP*/
+#container{
+    background-color:pink;
+    text-align:left;
+    padding:20px;
+    width: 1200px;
+    height: 600px;
+    overflow-y: visible;
+
+}
+#shop{
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(1,100px);
+    grid-gap: 20px;
+    align-content: space-between;
+    justify-items: stretch;
+    }
+  .item{
+    background-color: red;
+    grid-row: span 2;
+    grid-column: span 2;
+
+   
+    }
+  
